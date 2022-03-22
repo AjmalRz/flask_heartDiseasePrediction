@@ -1,0 +1,115 @@
+{% extends 'indexuser.html' %}
+{% block body %}
+
+
+<body>
+<div align="center">
+<form id="form1" name="form1" method="post" action="/viewprediction1">
+  <table width="500" border="0"class="table">
+    <tr>
+      <th width="120" scope="row">Name</th>
+      <td width="157"><label>
+        <input type="text" name="textfield2" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Gender</th>
+      <td><label>
+        <input name="radiobutton" type="radio" value="1" />
+      Male
+      <input name="radiobutton" type="radio" value="0" />
+      Female</label></td>
+    </tr>
+    <tr>
+      <th scope="row">Chest Pain Type </th>
+      <td><label>
+        <select name="select" >
+          <option value="1">Typical type 1 angina</option>
+          <option value="2">Typical type angina</option>
+          <option value="3">non-angina pain</option>
+          <option value="4">asymptomatic</option>
+        </select>
+        <br />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Fasting Blood Sugar </th>
+      <td><select name="select2">
+        <option value="1">120mg/dl</option>
+        <option value="0">&lt;120mg/dl</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th scope="row">Restecg</th>
+      <td><select name="select3">
+        <option value="0">normal</option>
+        <option value="1">having ST-T wave abnormaliy</option>
+        <option value="2">showing probale or definite lft ventricular hypertrophy</option>
+      </select>      </td>
+    </tr>
+    <tr>
+      <th scope="row">Exang</th>
+      <td><select name="select4">
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th scope="row">Slope</th>
+      <td><select name="select5">
+        <option value="1">unsloping</option>
+        <option value="2">flat</option>
+        <option value="3">downsloping</option>
+            </select></td>
+    </tr>
+    <tr>
+      <th scope="row">CA</th>
+      <td><select name="ca">
+	  <option value="0">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  
+	  </select> </td>
+    </tr>
+    <tr>
+      <th scope="row">Thal</th>
+      <td><select name="select6">
+        <option value="3">noraml</option>
+        <option value="6">fixed defect</option>
+        <option value="7">reversble defect </option>
+      </select>      </td>
+    </tr>
+    <tr>
+      <th scope="row">Test Blood Pressure </th>
+      <td><p>
+        <input type="text" name="textfield4" />
+          </p>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Serum Cholestrol(mg/dl) </th>
+      <td><input type="text" name="textfield5" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Thalach (maximu heart rate achieved) </th>
+      <td><input type="text" name="textfield3" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Old peak(ST depression induced by exercise relative to rest) </th>
+      <td><input type="text" name="textfield6" /></td>
+    </tr>
+    <tr>
+      <th scope="row">Age in year </th>
+      <td><input type="text" name="textfield7" /></td>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;</th>
+      <td><input type="submit" name="Submit" value="Enter" /></td>
+    </tr>
+  </table>
+  <!--<input type="text" name="textfield" />-->
+</form>
+</div>
+</body>
+{%endblock%}

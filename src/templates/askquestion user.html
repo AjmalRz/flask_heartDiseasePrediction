@@ -1,0 +1,35 @@
+{% extends 'indexuser.html' %}
+{% block body %}
+
+<body>
+<div align="center">
+<table width="200" border="0" class="table">
+  <tr>
+    <th scope="row">Question</th>
+    <th>Reply</th>
+  </tr>
+
+
+
+
+  {%for i in val%}
+  <tr>
+    <td>{{i[2]}}</td>
+    <td>{{i[3]}}</td>
+  </tr>
+  {%endfor%}
+
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+ <form id="form1" name="form1" method="post" action="qsts">
+   <label>
+     <input type="submit" name="Submit" value="Ask Question" />
+   </label>
+
+ </form>
+</div>
+</body>
+{% endblock %}

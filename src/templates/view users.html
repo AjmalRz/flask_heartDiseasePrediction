@@ -1,0 +1,24 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<table width="200" border="0"class="table">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Mobile </th>
+    <th>Email</th>
+  </tr>
+  {% for i in val %}
+  <tr>
+    <td>&nbsp;{{i[2]}}</td>
+    <td>&nbsp;{{i[3]}}</td>
+    <td>&nbsp;{{i[4]}}</td>
+    <td>&nbsp;{{i[5]}}</td>
+    <td>&nbsp;{{i[6]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<table width="200" border="0"class="table">
+  <tr>
+    <th>Name</th>
+
+    <th>Qualification</th>
+    <th>Gender</th>
+    <th>Specialised </th>
+    <th>Email</th>
+     <th>MobileNo</th>
+      <td></td>
+  </tr>
+{% for i in val %}
+  <tr>
+    <td>&nbsp;{{i[2]}}</td>
+    <td>{{i[3]}}</td>
+    <td>{{i[4]}}</td>
+    <td>{{i[5]}}&nbsp;</td>
+    <td>&nbsp;{{i[6]}}</td>
+    <td>{{i[7]}}</td>
+      <td>&nbsp;<a href="{{url_for('accept',login_id=i[1])}}">Accept</a> <a href="{{url_for('reject',login_id=i[1])}}">Reject</a></td>
+  </tr>
+  {% endfor %}
+
+</table>
+</body>
+{% endblock %}

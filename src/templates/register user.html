@@ -1,0 +1,67 @@
+{% extends 'index.html' %}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="/regester">
+  <table width="400">
+    <tr>
+      <th  scope="row">Name</th><th>
+        <label>
+        <input type="text" name="textfield" required pattern="[A-Z a-z]{3,25}" />
+        </label></th>
+    </tr>
+    <tr>
+      <th  scope="row">Age</th><th>
+        <label>
+        <input type="number" name="textfield2" required />
+        </label></th>
+    </tr>
+    <tr>
+      <th scope="row">Gender</th>
+      <th><label>
+        Male
+            <input name="radiobutton" type="radio" value="Male" checked />
+      Female
+      <input name="radiobutton" type="radio" value="Female" />
+      </label></th>
+    </tr>
+    <!--<tr>-->
+      <!--<th  scope="row">Docter</th><th>-->
+        <!--<label>-->
+        <!--<input type="text" name="textfield3"required />-->
+        <!--</label></th>-->
+    <!--</tr>-->
+    <tr>
+      <th  scope="row">Mobile</th><th>
+        <label>
+        <input type="text" name="textfield4" required pattern="[6789][0-9]{9}" />
+        </label></th>
+    </tr>
+    <tr>
+      <th  scope="row">Email</th><th>
+        <label>
+        <input type="text" name="textfield5" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+        </label></th>
+    </tr>
+     <th  scope="row">Username</th><th>
+        <label>
+        <input type="text" name="textfield6"required />
+        </label></th>
+      <tr>
+       <th  scope="row">password</th><th>
+        <label>
+        <input type="text" name="textfield7"required />
+        </label></th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;</th><th>
+        <input type="submit" name="Submit" value="REGISTER" />
+      </label></th>
+    </tr>
+
+  </table>
+  
+</form>
+</body>
+{% endblock %}

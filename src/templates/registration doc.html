@@ -1,0 +1,82 @@
+{% extends 'index.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="/docreg">
+  <table width="400">
+  <tr>
+      <th scope="row">Name</th>
+      <th>   
+      <td><label>
+        <input type="text" name="textfield"  required pattern="[A-Z a-z]{3,25}"  />
+        </label>
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">Gender</th>
+      <th>   
+      <th width="158"> <input type="radio" value="Male" name="radio" checked/>
+        Male
+        <input type="radio" value="Female" name="radio"/>
+        Female </th>
+      <td width="1">  
+    </tr>
+	   <th scope="row">Qualification</th>
+      <th>   
+      <td><label>
+        <input type="text" name="textfield4"required />
+        </label>
+      </td>
+    </tr>
+      <th scope="row">Specified in</th>
+      <th>   
+      <td><label>
+        <input type="text" name="textfield5"required />
+        </label>
+      </td>
+    </tr>
+    
+    <tr>
+      <th scope="row">Mobile</th>
+      <th>   
+      <td><label>
+        <input type="text" name="textfield6"required pattern="[6789][0-9]{9}" />
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <th>   
+      <td><label>
+        <input type="text" name="textfield7"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Username</th>
+      <th>   
+      <td><label>
+        <input type="text" name="un" required/>
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Password</th>
+      <th>   
+      <td><label>
+        <input type="password" name="pwd"required />
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td><label>
+        <input name="submit" type="submit" value="REGISTRATION"/>
+        </label>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}
